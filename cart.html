@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .cart-items, .wishlist-items {
+            margin-bottom: 30px;
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .product-details {
+            flex: 1;
+        }
+        .product-details h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .product-details p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .product-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .product-actions button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .product-actions button:hover {
+            background-color: #0056b3;
+        }
+        .wishlist-items h2 {
+            margin-bottom: 10px;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+
+        <!-- Cart Items Section -->
+        <div class="cart-items">
+            <h2>Cart Items</h2>
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <div class="product-details">
+                    <h3>Handmade Basket</h3>
+                    <p>Price: $25</p>
+                    <p>Quantity: 1</p>
+                </div>
+                <div class="product-actions">
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <div class="product-details">
+                    <h3>Wooden Carving</h3>
+                    <p>Price: $40</p>
+                    <p>Quantity: 2</p>
+                </div>
+                <div class="product-actions">
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
